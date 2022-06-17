@@ -1,4 +1,4 @@
-##### Grupo 16
+#### Grupo 16
 - Nicole Charún
 - Diego Carmona 
 - Diego Sánchez
