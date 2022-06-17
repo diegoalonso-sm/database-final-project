@@ -5,6 +5,7 @@
    - Debe contar con al menos 10000 tuplas
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:seleccionar_datos
+   https://www.kaggle.com/datasets/joonasyoon/github-topics (datos usados)
 
 **2. Acceso al Servidor**
    
