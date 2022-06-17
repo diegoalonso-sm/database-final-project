@@ -1,5 +1,3 @@
-### Plazos y acciones:
-
 **1. Seleccionar Datos**
    
    - Seleccionar las tablas a usar
