@@ -1,6 +1,6 @@
 ### Plazos y acciones:
 
-**1. Seleccionar Datos (plazo hasta: 29 de abril)**
+**1. Seleccionar Datos**
    
    - Seleccionar las tablas a usar
    - Modificar para tener 3 tablas y BCNF
@@ -8,7 +8,7 @@
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:seleccionar_datos
 
-**2. Acceso al Servidor (plazo hasta: 4 de mayo)**
+**2. Acceso al Servidor**
    
    ##### Credenciales: ssh -l cc3201 -p 316 cc3201.dcc.uchile.cl; eesogh7Rah9f (password) 
    
@@ -22,7 +22,7 @@
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:acceso_al_servidor
 
-**3. Configurar Postgres (plazo hasta: 6 de mayo)**
+**3. Configurar Postgres**
    
    - Crear usuario cc3201 (listo)
    - Crear base de datos (listo)
@@ -31,23 +31,23 @@
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:configurar_postgres
 
-**4. Cargar Los Datos (plazo hasta: 13 de mayo)**
+**4. Cargar los datos**
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:cargar_los_datos
 
-**5. Optimización (plazo hasta: 25 de mayo)**
+**5. Optimización**
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:optimizacion
 
-**6. Conexión Externa (plazo hasta: 27 de mayo)**
+**6. Conexión Externa**
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:conexion_externa
 
-**7. Armar La Aplicación (plazo hasta: 10 de junio)**
+**7. Armar La Aplicación**
   
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:armar_la_aplicacion_inicial
 
-**8. Entregas y Evaluación (plazo hasta: 16 de junio)**
+**8. Entregas y Evaluación**
   
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:entregar_presentacione
 
