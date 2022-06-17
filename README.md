@@ -1,8 +1,3 @@
-#### Grupo 16
-- Nicole Charún
-- Diego Carmona 
-- Diego Sánchez
-
 ### Plazos y acciones:
 
 **1. Seleccionar Datos (plazo hasta: 29 de abril)**
