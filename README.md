@@ -2,10 +2,10 @@
 
 **1. Seleccionar Datos (plazo hasta: 29 de abril)**
    
-   - Seleccionar las tablas a usar (listo)
-   - Modificar para tener 3 tablas y BCNF (pendiente)
+   - Seleccionar las tablas a usar
+   - Modificar para tener 3 tablas y BCNF
 
-   - https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:seleccionar_datos
+   https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:seleccionar_datos
 
 **2. Acceso al Servidor (plazo hasta: 4 de mayo)**
    
