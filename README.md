@@ -4,6 +4,7 @@
    
    - Seleccionar las tablas a usar
    - Modificar para tener 3 tablas y BCNF
+   - Debe contar con al menos 10000 tuplas
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:seleccionar_datos
 
