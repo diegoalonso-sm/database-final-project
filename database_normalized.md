@@ -26,8 +26,8 @@
 | forks           |	integer       |	How many forks there are of this repository in the whole network.                                               |
 | stars           |	integer       |	How many stars there are of this repository.                                                                    |
 | watchers        |	integer       |	The number of users watching the repository.                                                                    |
-| created_at	    | string        |	Identifies the date and time when the object was created in ISO format. For example, 2022-03-14T10:39:35Z.      |
-| updated_at	    | string        |	Identifies the date and time when the object was last updated in ISO format. For example, 2022-03-14T10:39:35Z. |
+| created_at	    | string        |	Identifies the date and time when the object was created in ISO format (I.E. 2022-03-14T10:39:35Z).             |
+| updated_at	    | string        |	Identifies the date and time when the object was last updated in ISO format (I.E. 2022-03-14T10:39:35Z).        |
 
 ### Cambios para normalizar
 
