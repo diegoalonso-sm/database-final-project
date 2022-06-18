@@ -16,7 +16,7 @@
 
 | Column          | Type          | Description                                                                                                     |
 | --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
-| **name***       | string        | The name of the repository.                                                                                     |
+| **name**       | string        | The name of the repository.                                                                                     |
 | **owner**       | string        | The User owner of the repository.                                                                               |
 | topic           | string        | The name of topics listed on GitHub.                                                                            |
 | description     |	string        | The description of the repository.                                                                              |                   
