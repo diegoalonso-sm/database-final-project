@@ -19,12 +19,11 @@
 | **name**        | **string**    | **The name of the repository.**                                                                                 |
 | **owner**       | **string**    | **The User owner of the repository.**                                                                           |
 | description     |	string        | The description of the repository.                                                                              |
-| is_archived	    | boolean	      | Indicates if the repository is unmaintained.                                                                    |
-| is_forked       |	boolean	      | Identifies if the repository is a fork.                                                                         |
 | size	          | integer       |	The file size of repository in bytes.                                                                           |
 | forks           |	integer       |	How many forks there are of this repository in the whole network.                                               |
 | stars           |	integer       |	How many stars there are of this repository.                                                                    |
 | watchers        |	integer       |	The number of users watching the repository.                                                                    |
+| is_archived	    | boolean	      | Indicates if the repository is unmaintained.                                                                    |
 | created_at	    | string        |	Identifies the date and time when the object was created in ISO format (I.E. 2022-03-14T10:39:35Z).             |
 | updated_at	    | string        |	Identifies the date and time when the object was last updated in ISO format (I.E. 2022-03-14T10:39:35Z).        |
 
@@ -33,6 +32,7 @@
 | Column          | Type          | Description                                                                                                     |
 | --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
 | **name**        | **string**    | **The name of the repository.**                                                                                 |
+| **language**	  | **string**	  | **The programming language this reposity is written in.**                                                       |
 
 ### Repositories-Topics
 | Column          | Type          | Description                                                                                                     |
