@@ -1,24 +1,24 @@
 ### Topics
 
-| Column        | Type          | Description                          |
+| **Column**    | **Type**      | **Description**                      |
 | ------------- | ------------- | ------------------------------------ |
-| title (llave) | string        | The name of topics listed on GitHub. |
+| ***title***   | string        | The name of topics listed on GitHub. |
 | description   | string        | A short description of the topic.    |
 
 ### Users
 
-| Column          | Type          | Description                                               |
+| **Column**      | **Type**      | **Description**                                           |
 | --------------- | ------------- | --------------------------------------------------------- |
-| owner (llave)   | string        | The User owner of the repository.                         |
+| ****owner***    | string        | The User owner of the repository.                         |
 | owner_type      | string        | The type of owner. For example, "User" or "Organization". | 
 
 ### Repositories
 
-| Column          | Type          | Description                                                                                                     |
+| **Column**      | **Type**      | **Description**                                                                                                 |
 | --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
-| name (llave)    | string        | The name of the repository.                                                                                     |
+| ***name***      | string        | The name of the repository.                                                                                     |
+| ***owner***     | string        | The User owner of the repository.                                                                               |
 | topic           | string        | The name of topics listed on GitHub.                                                                            |
-| owner (llave)   | string        | The User owner of the repository.                                                                               |
 | description     |	string        | The description of the repository.                                                                              |                   
 | is_archived	    | boolean	      | Indicates if the repository is unmaintained.                                                                    |
 | is_forked       |	boolean	      | Identifies if the repository is a fork.                                                                         |
