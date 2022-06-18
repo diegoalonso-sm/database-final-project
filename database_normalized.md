@@ -18,8 +18,7 @@
 | --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
 | **name**        | **string**    | **The name of the repository.**                                                                                 |
 | **owner**       | **string**    | **The User owner of the repository.**                                                                           |
-| **topic**       | **string**    | **The name of topics listed on GitHub.**                                                                        |
-| description     |	string        | The description of the repository.                                                                              |                   
+| description     |	string        | The description of the repository.                                                                              |
 | is_archived	    | boolean	      | Indicates if the repository is unmaintained.                                                                    |
 | is_forked       |	boolean	      | Identifies if the repository is a fork.                                                                         |
 | size	          | integer       |	The file size of repository in bytes.                                                                           |
@@ -28,6 +27,18 @@
 | watchers        |	integer       |	The number of users watching the repository.                                                                    |
 | created_at	    | string        |	Identifies the date and time when the object was created in ISO format (I.E. 2022-03-14T10:39:35Z).             |
 | updated_at	    | string        |	Identifies the date and time when the object was last updated in ISO format (I.E. 2022-03-14T10:39:35Z).        |
+
+### Programming Languages
+
+| Column          | Type          | Description                                                                                                     |
+| --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
+| **name**        | **string**    | **The name of the repository.**                                                                                 |
+
+### Repositories-Topics
+| Column          | Type          | Description                                                                                                     |
+| --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
+| **name**        | **string**    | **The name of the repository.**                                                                                 |
+| **topic**       | **string**    | **The name of topics listed on GitHub.**                                                                        |
 
 ### Cambios para normalizar
 
