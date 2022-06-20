@@ -37,16 +37,16 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:configurar_postgres
    
-   - Crear usuario cc3201 (listo)
-   - Crear base de datos (listo)
-   - Crear esquema github (listo)
-   - Configurar searchpath (listo)
+   - Crear usuario cc3201 (terminado)H
+   - Crear base de datos (terminado)
+   - Crear esquema Gitub (terminado)
+   - Configurar searchpath (terminado)
 
 **4. Cargar los datos (en proceso)**
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:cargar_los_datos
    
-   - Subir las tablas normalizadas en formato CSV (listo) 
+   - Subir las tablas normalizadas en formato CSV (terminado) 
    - Finalizar el diseño relacional con llaves y restricciones (en proceso)
    - Limpiar, normalizar y cargar los datos en la base de datos (en proceso)
    - Escribir al menos 10 consultas base para la aplicación (en proceso)
