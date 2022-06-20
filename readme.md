@@ -9,7 +9,9 @@
 
 **2. Acceso al Servidor**
    
-   ##### Credenciales: ssh -l cc3201 -p 316 cc3201.dcc.uchile.cl; eesogh7Rah9f (password) 
+   ##### Credenciales:
+   - ssh -l cc3201 -p 316 cc3201.dcc.uchile.cl
+   - Contraseña: eesogh7Rah9f 
    
    ##### Copiar archivos
    - scp -P 316 local.txt cc3201@cc3201.dcc.uchile.cl:/home/cc3201/ (computador al servidor)
