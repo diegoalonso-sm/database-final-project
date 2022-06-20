@@ -1,54 +1,40 @@
 ### Topics
 
-| Column        | Type          | Description                              |
-| ------------- | ------------- | ------------------------------------     |
-| **title**     | **string**    | **The name of topics listed on GitHub.** |
-| description   | string        | A short description of the topic.        |
+| Column      | Type       | Description                              |
+| ----------- | ---------- | ---------------------------------------- |
+| **name**    | **string** | **The name of topics listed on GitHub.** |
+| description | string     | A short description of the topic.        |
 
-### Users
+### Owners
 
-| Column          | Type          | Description                                               |
-| --------------- | ------------- | --------------------------------------------------------- |
-| **owner**       | **string**    | **The User owner of the repository.**                     |
-| owner_type      | string        | The type of owner. For example, "User" or "Organization". | 
+| Column     | Type       | Description                                               |
+| ---------- | ---------- | --------------------------------------------------------- |
+| **name**   | **string** | **The user owner of the repository.**                     |
+| owner_type | string     | The type of owner. For example, "User" or "Organization". | 
 
 ### Repositories
 
-| Column          | Type          | Description                                                                                                     |
-| --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
-| **name**        | **string**    | **The name of the repository.**                                                                                 |
-| **owner**       | **string**    | **The User owner of the repository.**                                                                           |
-| description     |	string        | The description of the repository.                                                                              |
-| size	          | integer       |	The file size of repository in bytes.                                                                           |
-| forks           |	integer       |	How many forks there are of this repository in the whole network.                                               |
-| stars           |	integer       |	How many stars there are of this repository.                                                                    |
-| watchers        |	integer       |	The number of users watching the repository.                                                                    |
-| is_archived	    | boolean	      | Indicates if the repository is unmaintained.                                                                    |
-| created_at	    | string        |	Identifies the date and time when the object was created in ISO format (I.E. 2022-03-14T10:39:35Z).             |
-| updated_at	    | string        |	Identifies the date and time when the object was last updated in ISO format (I.E. 2022-03-14T10:39:35Z).        |
+| Column      | Type       | Description                                                                                              |
+| ----------- | ---------- | -------------------------------------------------------------------------------------------------------- |
+| **name**    |	**string** | **The full name of the repository. This means {owner}/{name}.**                                          |
+| description |	string     | The description of the repository.                                                                       |
+| size	      | integer    | The file size of repository in bytes.                                                                    |
+| is_forked   |	boolean	   | Identifies if the repository is a fork.                                                                  |
+| forks       |	integer    | How many forks there are of this repository in the whole network.                                        |
+| stars       |	integer    | How many stars there are of this repository.                                                             |
+| watchers    |	integer    | The number of users watching the repository.                                                             |
+| last_update | string     | Identifies the date and time when the object was last updated in ISO format (I.E. 2022-03-14T10:39:35Z). |
 
-### Programming Languages
+### classified_by
 
-| Column          | Type          | Description                                                                                                     |
-| --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
-| **name**        | **string**    | **The name of the repository.**                                                                                 |
-| **language**	  | **string**	  | **The programming language this reposity is written in.**                                                       |
+| Column                | Type       | Description                              |
+| --------------------- | ---------- | ---------------------------------------- |
+| **Repositories.name** | **string** | **The name of the repository.**          |
+| **Topics.name**       | **string** | **The name of topics listed on GitHub.** |
 
-### Repositories-Topics
-| Column          | Type          | Description                                                                                                     |
-| --------------- | ------------- | --------------------------------------------------------------------------------------------------------------- |
-| **name**        | **string**    | **The name of the repository.**                                                                                 |
-| **topic**       | **string**    | **The name of topics listed on GitHub.**                                                                        |
+### created_by
 
-### Cambios para normalizar
-
-- Se elimina la columna logo_image de Topics.
-- Se elimina la columna tags de Repositories.
-- Se elimina la columna full_name de Repositories.
-- Se elimina la columna og-image de Repositories.
-- Se elimina la columna license de Repositories.
-- Se elimina la columna language de Repositories.
-- Se elimina la columna open_issues de repositories.
-- Se elimina la columna has_wiki de repositories.
-- Se elimina la columna has_pages de repositories.
-- Se elimina la columna has_sponsorship de repositories.
+| Column                | Type       | Description                                                     |
+| --------------------- | ---------- | --------------------------------------------------------------- |
+| **Repositories.name** |	**string** | **The full name of the repository. This means {owner}/{name}.** |
+| **Owner.name**        | **string** | **The name of topics listed on GitHub.**                        |
