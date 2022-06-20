@@ -48,7 +48,7 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
    
    - Subir las tablas normalizadas en formato CSV (terminado) 
    - Finalizar el diseño relacional con llaves y restricciones (terminado)
-   - Limpiar, normalizar y cargar los datos en la base de datos (en proceso)
+   - Limpiar, normalizar y cargar los datos en la base de datos (falta cargar datos a la DB)
    - Escribir al menos 10 consultas base para la aplicación (en proceso)
 
 **5. Optimización (en proceso)**
@@ -58,14 +58,14 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
    - Definir índices adecuados para trabajar (en proceso)
    - Crear al menos una vista (virtual o materializada) (en proceso)
 
-**6. Conexión Externa** (pendiente)
+**6. Conexión Externa (terminar)**
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:conexion_externa
 
-**7. Armar La Aplicación** (pendiente)
+**7. Armar La Aplicación (pendiente)**
   
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:armar_la_aplicacion_inicial
 
-**8. Entregas y Evaluación** (pendiente)
+**8. Entregas y Evaluación (pendiente)**
   
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:entregar_presentacione
