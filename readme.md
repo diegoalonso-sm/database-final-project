@@ -1,3 +1,17 @@
+### Ingreso a la máquina virtual
+ssh -l cc3201 -p 316 cc3201.dcc.uchile.cl
+
+### Credenciales
+- Hostname: cc3201.dcc.uchile.cl
+- Usuario: cc3201, Port: 316
+- Contraseña: eesogh7Rah9f
+
+#### Datos utilizados:
+https://www.kaggle.com/datasets/joonasyoon/github-topics
+
+### Ejemplos de proyectos:
+https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
+
 **1. Seleccionar Datos (terminado)** 
    
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:seleccionar_datos
@@ -55,17 +69,3 @@
 **8. Entregas y Evaluación** (pendiente)
   
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:entregar_presentacione
-
-##### Datos utilizados:
-https://www.kaggle.com/datasets/joonasyoon/github-topics
-
-##### Ejemplos de proyectos:
-https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
-
-##### Credenciales
-- Hostname: cc3201.dcc.uchile.cl
-- Usuario: cc3201, Port: 316
-- Contraseña: eesogh7Rah9f
-
-##### Ingreso a la máquina virtual
-ssh -l cc3201 -p 316 cc3201.dcc.uchile.cl
