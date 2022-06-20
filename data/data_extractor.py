@@ -23,6 +23,11 @@ df_repositories.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data
 df_classified_by = pd.concat([df1[['title']],df2[['full_name', 'description', 'size', 'is_forked', 'forks', 'stars', 'watchers', 'updated_at']]])
 df_classified_by.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\classified_by_normalized.csv")
 
-# created (relation)
+# created_by (relation)
 df_classified_by = df2[['full_name', 'owner', 'created_at']]
 df_classified_by.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\created_by_normalized.csv")
+
+# Test
+df_test = df2[['full_name', 'description']]
+df_test.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\test.csv")
+
