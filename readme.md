@@ -51,7 +51,7 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
    - Subir las tablas normalizadas en formato CSV (terminado) 
    - Finalizar el diseño relacional con llaves y restricciones (terminado)
    - Limpiar, normalizar y cargar los datos en la base de datos (terminado)
-   - Escribir al menos 10 consultas base para la aplicación (terminado) (mejorar)
+   - Escribir al menos 10 consultas base para la aplicación (terminado, puede mejorar)
 
 **5. Optimización (en proceso)**
 
