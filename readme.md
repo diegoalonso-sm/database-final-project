@@ -28,11 +28,11 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:acceso_al_servidor
    
-   ##### Copiar archivos
+   **Copiar archivos**
    - scp -P 316 local.txt cc3201@cc3201.dcc.uchile.cl:/home/cc3201/ (computador al servidor)
    - scp -P 316 cc3201@cc3201.dcc.uchile.cl:/home/cc3201/remote.txt /local/carpeta/ (servidor al computador)
 
-   ###### Descargar archivos en la máquina virtual
+   **Descargar archivos en la máquina virtual**
    - wget https://github.com/diegoalonso-sm/database-final-project/tree/main/data/Normalized
 
 **3. Configurar Postgres (terminado)**
