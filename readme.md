@@ -12,6 +12,8 @@ https://www.kaggle.com/datasets/joonasyoon/github-topics
 ### Ejemplos de proyectos:
 https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
 
+### Etapas del proyecto
+
 **1. Seleccionar Datos (terminado)** 
    
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:seleccionar_datos
