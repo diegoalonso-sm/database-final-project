@@ -41,7 +41,7 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
    
    - Crear usuario cc3201 (terminado)
    - Crear base de datos (terminado)
-   - Crear esquema Gitub (terminado)
+   - Crear esquema GitHub (terminado)
    - Configurar searchpath (terminado)
 
 **4. Cargar los datos (en proceso)**
