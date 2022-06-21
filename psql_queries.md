@@ -1,22 +1,58 @@
-SELECT full_name FROM languages WHERE lower(language) = lower('[nombre_lenguaje]') ORDER BY full_name;
+### Consultas básicas
+
+**En repositories (Ejemplo: [nombre_completo] = 00-matt/moneropool)**
+
+SELECT is_archived FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
+SELECT size FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
+SELECT watchers FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
+SELECT forks FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
+SELECT stars FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
+SELECT open_issues FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
+
+SELECT is_archived FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
+SELECT size FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
+SELECT watchers FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
+SELECT forks FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
+SELECT stars FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
+SELECT open_issues FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
+
+**En owners (Ejemplos: [propietario] = 00-matt, [tipo_propietario] = User)**
+
+SELECT owner_type FROM owners WHERE lower(owner) = lower('[propietario]');
+SELECT owner FROM owners WHERE lower(owner_type) = lower('[tipo_propietario]');
+
+SELECT owner_type FROM owners WHERE lower(owner) = lower('00-matt');
+SELECT owner FROM owners WHERE lower(owner_type) = lower('User');
+
+**En topics (Ejemplos: [nombre_tópico] = sql, [nombre_completo] = 00-matt/moneropool)**
+
 SELECT full_name FROM topics WHERE lower(topic) = lower('[nombre_tópico]') ORDER BY full_name;
+SELECT topic FROM topics WHERE lower(full_name) = lower('[nombre_completo]') ORDER BY full_name;
+
+SELECT full_name FROM topics WHERE lower(topic) = lower('sql') ORDER BY full_name;
+SELECT topic FROM topics WHERE lower(full_name) = lower('00-matt/moneropool') ORDER BY full_name;
+
+**En languages (Ejemplos: [nombre_lenguaje] = python, [nombre_completo] = 00-matt/moneropool)**
+
+SELECT full_name FROM languages WHERE lower(language) = lower('[nombre_lenguaje]') ORDER BY full_name;
+SELECT language FROM languages WHERE lower(full_name) = lower('[nombre_completo]') ORDER BY full_name;
+
+SELECT full_name FROM languages WHERE lower(language) = lower('python') ORDER BY full_name;
+SELECT language FROM languages WHERE lower(full_name) = lower('00-matt/moneropool') ORDER BY full_name;
+
+**En created_by (Ejemplos: [año] = 2008, [propietario] = 00-matt, [nombre_completo] = 00-matt/moneropool)**
+
 SELECT full_name FROM created_by WHERE date_part('year', created_at) = [año] ORDER BY full_name;
 SELECT full_name FROM created_by WHERE lower(owner) = lower('[propietario]') ORDER BY full_name;
+SELECT created_at FROM created_by WHERE lower(full_name) = lower('[nombre_completo]') ORDER BY full_name;
+SELECT owner FROM created_by WHERE WHERE lower(full_name) = lower('[nombre_completo]') ORDER BY full_name;
 
-**Consultas básicas en repositories (Ejemplo: [nombre_completo] = 00-matt/moneropool)**
-- SELECT is_archived FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT size FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT watchers FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT forks FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT stars FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT open_issues FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
+SELECT full_name FROM created_by WHERE date_part('year', created_at) = 2008 ORDER BY full_name;
+SELECT full_name FROM created_by WHERE lower(owner) = lower('00-matt') ORDER BY full_name;
+SELECT created_at FROM created_by WHERE lower(full_name) = lower('00-matt/moneropool') ORDER BY full_name;
+SELECT owner FROM created_by WHERE lower(full_name) = lower('00-matt/moneropool') ORDER BY full_name;
 
-**Consultas básicas en owners (Ejemplo: [nombre_completo] = 00-matt/moneropool)**
-- SELECT owner_type FROM owners WHERE lower(owner) = lower('[propietario]');
-
-**Consultas básicas en topics (Ejemplo: [nombre_completo] = 00-matt/moneropool)**
-**Consultas básicas en languages (Ejemplo: [nombre_completo] = 00-matt/moneropool)**
-**Consultas básicas en created_by (Ejemplo: [nombre_completo] = 00-matt/moneropool)**
+### Consultas específicas
 
 1) Todos los tópicos referenciados en la plataforma (resultados ordenados alfabéticamente).
 SELECT DISTINCT topic FROM topics ORDER BY topic;
