@@ -7,24 +7,22 @@ directory2 = "C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\reposito
 df1 = pd.read_csv(directory1)
 df2 = pd.read_csv(directory2)
 
-df1['title'] = df1['title'].str.lower()
-
-# Topics (entity)
-df_topics = df1[['title','description']]
-df_topics.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\topics_normalized.csv")
-
 # Owners (entity)
 df_owners = df2[['owner', 'owner_type']]
-df_owners.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\owners_normalized.csv")
+df_owners.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\normalized\\owners.csv", index=False)
 
 # Repositories (entity)
-df_repositories = df2[['full_name', 'description', 'size', 'is_forked', 'forks', 'stars', 'watchers', 'updated_at']]
-df_repositories.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\repositories_normalized.csv")
+df_repositories = df2[['full_name', 'is_archived', 'size', 'watchers', 'forks', 'stars', 'open_issues']]
+df_repositories.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\normalized\\repositories.csv", index=False)
 
-# classified_by (relation)
-df_classified_by = df2[['full_name', 'topic']]
-df_classified_by.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\classified_by_normalized.csv")
+# Topics (entity)
+df_topics = df2[['full_name', 'topic']]
+df_topics.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\normalized\\topics.csv", index=False)
 
-# created_by (relation)
-df_created_by = df2[['full_name', 'owner', 'created_at']]
-df_created_by.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\created_by_normalized.csv")
+# Languages (entity)
+df_topics = df2[['full_name', 'language']]
+df_topics.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\normalized\\languages.csv", index=False)
+
+# Created_by (relation)
+df_topics = df2[['full_name', 'owner', 'created_at']]
+df_topics.to_csv("C:\\Users\\diego\\OneDrive\\Escritorio\\DB Project\\data\\normalized\\created_at.csv", index=False)
