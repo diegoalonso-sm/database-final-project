@@ -1,15 +1,15 @@
-#### Ingreso a la máquina virtual
+### Ingreso a la máquina virtual
 ssh -l cc3201 -p 316 cc3201.dcc.uchile.cl
 
-#### Credenciales
+### Credenciales
 - Hostname: cc3201.dcc.uchile.cl
 - Usuario: cc3201, Port: 316
 - Contraseña: eesogh7Rah9f
 
-#### Datos utilizados:
+### Datos utilizados:
 https://www.kaggle.com/datasets/joonasyoon/github-topics
 
-#### Ejemplos de proyectos:
+### Ejemplos de proyectos:
 https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
 
 **1. Seleccionar Datos (terminado)** 
