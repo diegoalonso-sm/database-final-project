@@ -69,3 +69,5 @@
 - SELECT date_part('year', created_at), count(full_name) FROM created_by GROUP BY date_part('year', created_at) ORDER BY year DESC;
 
 **Años de actividad de propietarios. CREAR VISTA.**
+
+**¡AGREGAR CONSULTAS ESPECIFICAS PARA REPOSITORIES!**
