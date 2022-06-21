@@ -16,9 +16,9 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
    
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:seleccionar_datos
    
-   - Seleccionar las tablas a usar
-   - Modificar para tener 3 tablas y BCNF
-   - Debe contar con al menos 10000 tuplas
+   - Seleccionar las tablas a usar (terminado)
+   - Modificar para tener 3 tablas y BCNF (terminado)
+   - Debe contar con al menos 10000 tuplas (terminado)
    
    https://www.kaggle.com/datasets/joonasyoon/github-topics (datos usados)
 
@@ -48,7 +48,7 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
    
    - Subir las tablas normalizadas en formato CSV (terminado) 
    - Finalizar el diseño relacional con llaves y restricciones (terminado)
-   - Limpiar, normalizar y cargar los datos en la base de datos (falta cargar datos a la DB)
+   - Limpiar, normalizar y cargar los datos en la base de datos (terminado)
    - Escribir al menos 10 consultas base para la aplicación (en proceso)
 
 **5. Optimización (en proceso)**
