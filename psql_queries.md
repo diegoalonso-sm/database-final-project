@@ -2,19 +2,19 @@
 
 **En repositories (Ejemplo: [nombre_completo] = 00-matt/moneropool)**
 
-- SELECT is_archived FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT size FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT watchers FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT forks FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT stars FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
-- SELECT open_issues FROM repositories WHERE lower(full_name) = lower('[nombre_completo]');
+SELECT is_archived FROM repositories WHERE lower(full_name) = lower('[nombre_completo]'); \\
+SELECT size FROM repositories WHERE lower(full_name) = lower('[nombre_completo]'); \\
+SELECT watchers FROM repositories WHERE lower(full_name) = lower('[nombre_completo]'); \\
+SELECT forks FROM repositories WHERE lower(full_name) = lower('[nombre_completo]'); \\
+SELECT stars FROM repositories WHERE lower(full_name) = lower('[nombre_completo]'); \\
+SELECT open_issues FROM repositories WHERE lower(full_name) = lower('[nombre_completo]'); \\
 
-- SELECT is_archived FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
-- SELECT size FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
-- SELECT watchers FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
-- SELECT forks FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
-- SELECT stars FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
-- SELECT open_issues FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool');
+- SELECT is_archived FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool'); \\
+- SELECT size FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool'); \\
+- SELECT watchers FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool'); \\
+- SELECT forks FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool'); \\
+- SELECT stars FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool'); \\
+- SELECT open_issues FROM repositories WHERE lower(full_name) = lower('00-matt/moneropool'); \\
 
 **En owners (Ejemplos: [propietario] = 00-matt, [tipo_propietario] = User)**
 
