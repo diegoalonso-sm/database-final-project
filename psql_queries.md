@@ -35,37 +35,47 @@
 ### Consultas específicas
 
 1) Todos los tópicos referenciados en la plataforma (resultados ordenados alfabéticamente).
+
 SELECT DISTINCT topic FROM topics ORDER BY topic;
 
 2) Todos los lenguajes utilizados en la plataforma (resultados ordenados alfabéticamente).
+
 SELECT DISTINCT language FROM languages ORDER BY language;
 
 3) Todos los propietarios + nombre de sus repositorios (resultados ordenados por el nombre de su propietario).
+
 SELECT DISTINCT c1.owner, c1.full_name FROM created_by c1, created_by c2 WHERE c1.full_name <> c2.full_name AND c1.owner = c2.owner ORDER BY c1.owner;
 
 4) Todos los propietarios + cantidad de repositorios a su nombre (resultados ordenados de mayor a menor).
+
 SELECT DISTINCT owner, count(owner) FROM created_by GROUP BY owner ORDER BY count(owner) DESC;
 
 5) Persona con máximo número de repositorios en la plataforma. IDEA: CREAR UNA VISTA.
 
 6) Repositorios + fechas de creación (resultados ordenados desde el más antiguo al más nuevo).
+
 SELECT created_at, full_name FROM created_by ORDER BY created_at;
 
 7) Número de repositorios que fueron creados el mismo día + fecha de creación (resultados ordenados desde el más antiguo al más nuevo).
+
 SELECT created_at, count(full_name) FROM created_by GROUP BY created_at ORDER BY created_at;
 
 8) Intervalo entre el repositorio más antiguo y el más nuevo. IDEA: CREAR VISTA.
 
 9) Repositorios creados el primer año registrado de la plataforma.
+
 SELECT DISTINCT owner, created_at FROM created_by WHERE date_part('year', created_at) = (SELECT min(date_part('year', created_at)) FROM created_by) ORDER BY owner;
 
 10) Repositorios creados el último año registrado de la plataforma.
+
 SELECT DISTINCT owner, created_at FROM created_by WHERE date_part('year', created_at) = (SELECT max(date_part('year', created_at)) FROM created_by) ORDER BY owner;
 
 11) Número de repositorios creados en un año en específico (Ejemplos: [año] = 2008).
+
 SELECT date_part('year', created_at), count(full_name) FROM created_by WHERE date_part('year', created_at) = [año] GROUP BY date_part('year', created_at);
 
 12) Número de repositorios creados por año.
+
 SELECT date_part('year', created_at), count(full_name) FROM created_by GROUP BY date_part('year', created_at) ORDER BY year DESC;
 
 13) Años de actividad de propietarios. CREAR VISTA.
