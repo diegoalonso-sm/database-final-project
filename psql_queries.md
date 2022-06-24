@@ -1,3 +1,21 @@
+### Consultas finales
+
+**Vista materializada**
+
+- CREATE MATERIALIZED VIEW github.usersdata AS (SELECT DISTINCT owner AS username, count(repositories.full_name) AS repositories_number, SUM(size) AS total_size, SUM(watchers) AS total_watchers, SUM(forks) AS total_forks, SUM(stars) AS total_stars, SUM(open_issues) AS total_open_issues FROM created_by, repositories WHERE created_by.full_name = repositories.full_name GROUP BY owner);
+
+**Buscar por owner el resumen de su actividad en github**
+
+- SELECT * FROM usersdata WHERE username = '[owner]';
+
+**Muestra los repositorios junto con todos los lenguajes utilizados y tópicos asociados**
+
+- SELECT DISTINCT repositories.full_name, string_agg( DISTINCT topics.topic, ', ' ORDER BY topics.topic) AS topics, string_agg(DISTINCT languages.language, ', ' ORDER BY languages.language) AS languages FROM repositories, languages, topics WHERE repositories.full_name = languages.full_name AND repositories.full_name = topics.full_name GROUP BY repositories.full_name; (nuevo)
+
+**Entrega ordena fecha (más nuevo a más antiguo) el número de repositorios subidos a la plataforma**
+
+- SELECT date_part('year', created_at) AS year, count(created_by.full_name) AS repositories_number FROM created_by GROUP BY date_part('year', created_at) ORDER BY date_part('year', created_at) DESC;
+
 ### Consultas básicas
 
 **En repositories (Ejemplo: [nombre_completo] = 00-matt/moneropool)**
@@ -47,16 +65,11 @@ ESTO FUNCIONA, PERO ES LO MISMO QUE LA TABLA NORMAL PERO ORDENADA :c**
 **Todos los propietarios + cantidad de repositorios a su nombre (resultados ordenados de mayor a menor).**
 - SELECT DISTINCT owner, count(owner) FROM created_by GROUP BY owner ORDER BY count(owner) DESC;
 
-**Persona con máximo número de repositorios en la plataforma. IDEA: CREAR UNA VISTA.**
-
 **Repositorios + fechas de creación (resultados ordenados desde el más antiguo al más nuevo).**
 - SELECT created_at, full_name FROM created_by ORDER BY created_at;
 
 **Número de repositorios que fueron creados el mismo día + fecha de creación (resultados ordenados desde el más antiguo al más nuevo).**
 - SELECT created_at, count(full_name) FROM created_by GROUP BY created_at ORDER BY created_at;
-
-**Intervalo entre el repositorio más antiguo y el más nuevo. IDEA: CREAR VISTA.**
-
 **Repositorios creados el primer año registrado de la plataforma.**
 - SELECT DISTINCT owner, created_at FROM created_by WHERE date_part('year', created_at) = (SELECT min(date_part('year', created_at)) FROM created_by) ORDER BY owner;
 
@@ -68,7 +81,3 @@ ESTO FUNCIONA, PERO ES LO MISMO QUE LA TABLA NORMAL PERO ORDENADA :c**
 
 **Número de repositorios creados por año.**
 - SELECT date_part('year', created_at), count(full_name) FROM created_by GROUP BY date_part('year', created_at) ORDER BY date_part('year', created_at) DESC;
-
-**Años de actividad de propietarios. CREAR VISTA.**
-
-**¡AGREGAR CONSULTAS ESPECIFICAS PARA REPOSITORIES!**
