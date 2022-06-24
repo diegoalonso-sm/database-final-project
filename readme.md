@@ -44,30 +44,30 @@ https://aidanhogan.com/teaching/cc3201-1-2021/projects/play.html
    - Crear esquema GitHub (terminado)
    - Configurar searchpath (terminado)
 
-**4. Cargar los datos (en proceso)**
+**4. Cargar los datos (terminado)**
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:cargar_los_datos
    
    - Subir las tablas normalizadas en formato CSV (terminado) 
    - Finalizar el diseño relacional con llaves y restricciones (terminado)
    - Limpiar, normalizar y cargar los datos en la base de datos (terminado)
-   - Escribir al menos 10 consultas base para la aplicación (terminado, puede mejorar)
+   - Escribir al menos 10 consultas base para la aplicación (terminado)
 
 **5. Optimización (en proceso)**
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:optimizacion
 
    - Definir índices adecuados para trabajar (en proceso)
-   - Crear al menos una vista (virtual o materializada) (en proceso)
+   - Crear al menos una vista (virtual o materializada) (terminado)
 
 **6. Conexión Externa (terminado)**
 
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:conexion_externa
 
-**7. Armar La Aplicación (pendiente)**
+**7. Armar La Aplicación (terminado)**
   
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:armar_la_aplicacion_inicial
 
-**8. Entregas y Evaluación (pendiente)**
+**8. Entregas y Evaluación (terminado)**
   
    https://wiki.dcc.uchile.cl/cc3201/doku.php?id=proyecto:entregar_presentacione
