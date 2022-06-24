@@ -40,7 +40,8 @@
 **Todos los lenguajes utilizados en la plataforma (resultados ordenados alfabéticamente).**
 - SELECT DISTINCT language FROM languages ORDER BY language;
 
-**Todos los propietarios + nombre de sus repositorios (resultados ordenados por el nombre de su propietario).**
+**Todos los propietarios + nombre de sus repositorios (resultados ordenados por el nombre de su propietario).
+ESTO FUNCIONA, PERO ES LO MISMO QUE LA TABLA NORMAL PERO ORDENADA :c**
 - SELECT DISTINCT c1.owner, c1.full_name FROM created_by c1, created_by c2 WHERE c1.full_name <> c2.full_name AND c1.owner = c2.owner ORDER BY c1.owner;
 
 **Todos los propietarios + cantidad de repositorios a su nombre (resultados ordenados de mayor a menor).**
